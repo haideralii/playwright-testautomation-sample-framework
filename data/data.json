@@ -1,0 +1,13 @@
+{
+    "email": "email@email.com",
+    "helloWorld": "Hello World!",
+    "formPageUrl": "https://demoqa.com/automation-practice-form",
+    "paintsPageUrl": "https://paint.js.org/",
+    "alerts": {
+        "jsAlertMsg": "You successfully clicked an alert",
+        "jsCancelAlertMsg": "You clicked: Cancel",
+        "jsPromptAlertMsg": "You entered: "
+    },
+
+    "dropdownOptions": ["Option 1", "Option 2"]
+}

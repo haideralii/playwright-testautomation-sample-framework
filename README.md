@@ -1,26 +1,50 @@
-# playwright-testautomation-sample-framework
+# Branching Strategy
 
-## clone repo
+A project should at least have the following branches
+    • master
+    • develop
+    • feature
 
-git clone https://github.com/haideralii/playwright-testautomation-sample-framework.git
-
-## Pre-requisites
+## To execute Tests
+# must have
 
     - node js installed 
     - Any JS supported ide
-    
-## To install reqiured dependencies, run following command in the root folder
+
+# to install reqiured dependencies, run following command in the root folder
 
     npm install 
-    
-## Run following command in the root folder, which will execute the tests
+
+
+###### IMPORTANT ##################
+
+#### To run tests on Operating System other than Windows you can follow -- Section B, and if you are on Windows follow -- Section A  ########
+
+#### SECTION A #########
+# RUN following command in the root folder, which will execute the tests
 
     npm test
-    
-## To Run test and generate HTML Report, run following command
 
-    npm run htmlReport-test
 
- ## To Run test in all installed browsers(chromium, firfox, safari(webkit) ), run following command
+## Also, there are number of other commands in package.json file in scripts object
+# you can use those commands as follows
 
-    npm run all-browser-test
+    npm run name_of_command
+
+
+#### SECTION B #########
+# RUN following command in the root folder, which will execute the tests
+
+    npm run non-windows-os-test
+
+
+## Also, there are number of other commands in package.json file in scripts object
+
+    To use those commands remove "set" and use "export" keyword in package.json file in scripts
+
+# And then you can use those commands as follows
+
+    npm run name_of_command
+
+
+

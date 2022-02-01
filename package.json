@@ -1,0 +1,28 @@
+{
+  "name": "playwright-testautomation",
+  "version": "1.0.0",
+  "Author": "Haider Ali",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "set environment=dev&& npx playwright test --reporter=list",
+    "non-windows-os-test": "export environment=dev&& npx playwright test --reporter=list",
+    "firefox-test": "set environment=dev&& npx playwright test --browser=firefox --headed",
+    "all-browser-test": "set environment=dev&& npx playwright test --browser=all --headed",
+    "disable-parallel-test": "set environment=dev&& npx playwright test --workers=1 --headed --reporter=dot",
+    "mobile-view-test": "set environment=dev&& npx playwright test --project='Mobile Safari'",
+    "debug-test": "set environment=dev&& npx playwright test --debug --headed --reporter=dot",
+    "debug-inspector-test": "set environment=dev&& set PWDEBUG=1 && npx playwright test --debug --headed",
+    "grp-test": "set environment=dev&& npx playwright test --grep @smoke",
+    "htmlReport-test": "set environment=dev&& npx playwright test --headed --reporter=html && npx playwright show-report",
+    "record-test": "npx playwright codegen https://www.saucedemo.com/",
+    "allure-report-test": "set environment=dev&& npx playwright test --reporter=line,allure-playwright",
+    "open-allure-report": "allure generate ./allure-results --clean && allure open ./allure-report"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.17",
+    "allure-playwright": "^2.0.0-beta.14"
+  }
+}
