@@ -2,7 +2,7 @@
 
 ## clone repo
 
-https://github.com/haideralii/playwright-testautomation-sample-framework.git
+git clone https://github.com/haideralii/playwright-testautomation-sample-framework.git
 
 ## Pre-requisites
 
