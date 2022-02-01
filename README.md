@@ -2,6 +2,8 @@
 
 ## clone repo
 
+https://github.com/haideralii/playwright-testautomation-sample-framework.git
+
 ## Pre-requisites
 
     - node js installed 
